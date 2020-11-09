@@ -30,7 +30,14 @@ function Chat() {
           </IconButton>
         </div>
       </div>
-      <div className="chat__body"></div>
+      <div className="chat__body">
+        <p className="chat__message">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          voluptatum sunt omnis nobis reprehenderit nisi explicabo dignissimos,
+          corrupti provident itaque quidem eaque est dolorum eius veritatis
+          temporibus magni ullam. Aut.
+        </p>
+      </div>
       <div className="chat__footer"></div>
     </div>
   );
