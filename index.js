@@ -1,9 +1,10 @@
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.0.1/firebase-app.js"></script>
+// <!-- The core Firebase JS SDK is always required and must be listed first -->
+// <script src="/__/firebase/8.0.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+// <!-- TODO: Add SDKs for Firebase products that you want to use
+//      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+// <!-- Initialize Firebase -->
+// <script src="/__/firebase/init.js"></script>
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional

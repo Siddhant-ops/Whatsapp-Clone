@@ -1,5 +1,11 @@
 import { Avatar, IconButton } from "@material-ui/core";
-import { AttachFile, MoreVert, SearchOutlined } from "@material-ui/icons";
+import {
+  AttachFile,
+  InsertEmoticon,
+  MoreVert,
+  SearchOutlined,
+} from "@material-ui/icons";
+import MicIcon from "@material-ui/icons/Mic";
 import React, { useEffect, useState } from "react";
 import "./Chat.css";
 
@@ -9,6 +15,14 @@ function Chat() {
   useEffect(() => {
     setSeed(Math.floor(Math.random() * 5000));
   }, []);
+
+  const [input, setInput] = useState("");
+
+  const sendMessage = (e) => {
+    e.preventDefault();
+    console.log("You typed >>> ", input);
+    setInput("");
+  };
 
   return (
     <div className="chat">
@@ -31,14 +45,32 @@ function Chat() {
         </div>
       </div>
       <div className="chat__body">
-        <p className="chat__message">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-          voluptatum sunt omnis nobis reprehenderit nisi explicabo dignissimos,
-          corrupti provident itaque quidem eaque est dolorum eius veritatis
-          temporibus magni ullam. Aut.
+        <p className={`chat__message ${true && "chat__reciever"}`}>
+          <span className="chat__name">Siddhant Dalvi</span>
+          Hey Guys
+          <span className="chat__timestamp">8:35pm</span>
+        </p>
+        <p className={`chat__message ${false && "chat__reciever"}`}>
+          <span className="chat__name">Siddhant Dalvi</span>
+          Hey Guys
+          <span className="chat__timestamp">8:35pm</span>
         </p>
       </div>
-      <div className="chat__footer"></div>
+      <div className="chat__footer">
+        <InsertEmoticon />
+        <form>
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Type a message"
+            type="text"
+          />
+          <button type="submit" onClick={sendMessage}>
+            Send
+          </button>
+        </form>
+        <MicIcon />
+      </div>
     </div>
   );
 }
