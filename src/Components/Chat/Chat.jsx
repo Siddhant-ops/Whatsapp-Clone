@@ -8,7 +8,7 @@ import {
 import MicIcon from "@material-ui/icons/Mic";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import db from "../firebase/firebase";
+import db from "../../firebase";
 import "./Chat.css";
 
 function Chat() {
