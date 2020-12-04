@@ -5,12 +5,13 @@
 /.pnp
 .pnp.js
 
+/src/FirebaseConfig.js
+
 # testing
 /coverage
 
 # production
 /build
-.firebaseConfig.js
 .firebasec
 .firebase.json
 /.firebase
