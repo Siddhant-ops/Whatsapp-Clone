@@ -10,7 +10,7 @@
 
 # production
 /build
-./src/firebaseConfig.js
+.firebaseConfig.js
 .firebasec
 .firebase.json
 /.firebase
